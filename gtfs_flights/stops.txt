@@ -1,0 +1,31 @@
+stop_name,stop_id,stop_lat,stop_lon
+Adolfo Suárez Madrid–Barajas Airport,m,40.471928,-3.56264
+Alicante International Airport,i,38.2822,-0.558156
+Amsterdam Airport Schiphol,4,52.3086,4.76389
+Barcelona International Airport,l,41.2971,2.07846
+Berlin-Tegel Airport,a,52.5597,13.2877
+Brussels Airport,s,50.9014,4.48444
+Charles de Gaulle International Airport,8,49.0128,2.55
+Copenhagen Kastrup Airport,1,55.6179,12.656
+Dublin Airport,u,53.4213,-6.27007
+Düsseldorf Airport,g,51.2895,6.76678
+Eleftherios Venizelos International Airport,e,37.9364,23.9445
+Frankfurt am Main Airport,k,50.033333,8.570556
+Gran Canaria Airport,5,27.9319,-15.3866
+Hamburg Airport,2,53.6304,9.98823
+Humberto Delgado Airport (Lisbon Portela Airport),n,38.7813,-9.13592
+Leonardo da Vinci–Fiumicino Airport,3,41.800278,12.238889
+London Gatwick Airport,o,51.1481,-0.190278
+London Heathrow Airport,h,51.4706,-0.461941
+London Stansted Airport,p,51.885,0.235
+Manchester Airport,b,53.3537,-2.27495
+Munich Airport,t,48.3538,11.7861
+Málaga Airport,c,36.6749,-4.49911
+Oslo Lufthavn,9,60.121,11.0502
+Palma De Mallorca Airport,f,39.5517,2.73881
+Paris-Orly Airport,d,48.72333,2.3794444
+Stockholm-Arlanda Airport,q,59.6519,17.9186
+Tenerife South Airport,6,28.0445,-16.5725
+Vienna International Airport,7,48.1103,16.5697
+Václav Havel Airport Prague,j,50.1008,14.26
+Zürich Airport,r,47.4647,8.54917

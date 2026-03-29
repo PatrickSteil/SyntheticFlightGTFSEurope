@@ -135,7 +135,7 @@ def write_gtfs(airports, routes, start_date, end_date):
     files = {}
     writers = {}
 
-    filenames = ["stops.txt", "routes.txt", "trips.txt", "stop_times.txt", "calendar.txt", "feed_info.txt"]
+    filenames = ["agency.txt", "stops.txt", "routes.txt", "trips.txt", "stop_times.txt", "calendar.txt", "feed_info.txt"]
 
     for fname in filenames:
         f = open(os.path.join(OUTPUT_DIR, fname), "w", newline="")
@@ -143,12 +143,16 @@ def write_gtfs(airports, routes, start_date, end_date):
         writers[fname] = csv.writer(f)
 
     # headers
+    writers["agency.txt"].writerow(["agency_id","agency_name","agency_url","agency_timezone"])
     writers["stops.txt"].writerow(["stop_id","stop_name","stop_lat","stop_lon"])
     writers["routes.txt"].writerow(["route_id","route_short_name","route_type"])
     writers["trips.txt"].writerow(["route_id","service_id","trip_id"])
     writers["stop_times.txt"].writerow(["trip_id","arrival_time","departure_time","stop_id","stop_sequence"])
     writers["calendar.txt"].writerow(["service_id","monday","tuesday","wednesday","thursday","friday","saturday","sunday","start_date","end_date"])
     writers["feed_info.txt"].writerow(["feed_publisher_name","feed_publisher_url","feed_lang","feed_version","feed_start_date","feed_end_date","feed_desc"])
+
+    # agency
+    writers["agency.txt"].writerow(["1","Synthetic - OpenFlights","https://openflights.org/","Etc/UTC"])
 
     # calendar
     writers["calendar.txt"].writerow(["DAILY",1,1,1,1,1,1,1,start_date,end_date])
